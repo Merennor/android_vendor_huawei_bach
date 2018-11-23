@@ -16,6 +16,31 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter bach,$(TARGET_DEVICE)),)
 
+# FIDO
+include $(CLEAR_VARS)
+LOCAL_MODULE := FidoCryptoService
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := vendor/app/FidoCryptoService/FidoCryptoService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := FidoSuiService
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := vendor/app/FidoSuiService/FidoSuiService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
 # Graphics
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsdm-disp-apis

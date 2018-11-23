@@ -12,9 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# APP
+PRODUCT_PACKAGES += \
+    FidoCryptoService \
+    FidoSuiService \
+    TimeService
+
+# LIB
 PRODUCT_PACKAGES += \
     libsdm-disp-apis \
-    TimeService \
     libtime_genoff    
 
 $(call inherit-product, vendor/huawei/bach/bach-vendor-blobs.mk)
