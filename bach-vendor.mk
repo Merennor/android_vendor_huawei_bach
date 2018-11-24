@@ -14,13 +14,19 @@
 
 # APP
 PRODUCT_PACKAGES += \
+    com.qualcomm.location \
     FidoCryptoService \
     FidoSuiService \
     TimeService
 
+# Framework
+PRODUCT_PACKAGES += \
+    com.qti.location.sdk
+
 # LIB
 PRODUCT_PACKAGES += \
     libsdm-disp-apis \
-    libtime_genoff    
+    libtime_genoff
+
 
 $(call inherit-product, vendor/huawei/bach/bach-vendor-blobs.mk)
