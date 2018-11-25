@@ -15,6 +15,7 @@
 # APP
 PRODUCT_PACKAGES += \
     CNEService \
+    colorservice \
     com.qualcomm.location \
     dpmserviceapp \
     FidoCryptoService \
