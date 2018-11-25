@@ -49,7 +49,7 @@ include $(BUILD_PREBUILT)
 
 # DPM
 include $(CLEAR_VARS)
-LOCAL_MODULE := CNEService
+LOCAL_MODULE := dpmserviceapp
 LOCAL_MODULE_OWNER := huawei
 LOCAL_SRC_FILES := vendor/app/dpmserviceapp/dpmserviceapp.apk
 LOCAL_CERTIFICATE := platform
