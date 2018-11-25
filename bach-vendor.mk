@@ -16,6 +16,7 @@
 PRODUCT_PACKAGES += \
     CNEService \
     com.qualcomm.location \
+    dpmserviceapp \
     FidoCryptoService \
     FidoSuiService \
     TimeService
