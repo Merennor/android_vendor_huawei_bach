@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     FidoCryptoService \
     FidoSuiService \
+    HotwordEnrollment \
     QtiTetherService \
     TimeService
 
