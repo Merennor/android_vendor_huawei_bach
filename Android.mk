@@ -16,6 +16,24 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter bach,$(TARGET_DEVICE)),)
 
+# Audio
+include $(CLEAR_VARS)
+LOCAL_COPY_HEADERS_TO	:= mm-audio/audio-src
+LOCAL_COPY_HEADERS	+= proprietary/QCT_Resampler.h
+include $(BUILD_COPY_HEADERS)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libqct_resampler
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := vendor/lib/libqct_resampler.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
 # FIDO
 include $(CLEAR_VARS)
 LOCAL_MODULE := FidoCryptoService
