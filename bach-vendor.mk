@@ -14,6 +14,7 @@
 
 # APP
 PRODUCT_PACKAGES += \
+    CNEService \
     com.qualcomm.location \
     FidoCryptoService \
     FidoSuiService \
