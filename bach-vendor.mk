@@ -18,15 +18,18 @@ PRODUCT_PACKAGES += \
     colorservice \
     com.qualcomm.location \
     dpmserviceapp \
+    embms \
     FidoCryptoService \
     FidoSuiService \
     HotwordEnrollment \
+    qcrilmsgtunnel \
     QtiTetherService \
     TimeService
 
 # Framework
 PRODUCT_PACKAGES += \
-    com.qti.location.sdk
+    com.qti.location.sdk \
+    qcrilhook
 
 # LIB
 PRODUCT_PACKAGES += \
