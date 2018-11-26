@@ -22,6 +22,8 @@ PRODUCT_PACKAGES += \
     FidoCryptoService \
     FidoSuiService \
     HotwordEnrollment \
+    ims \
+    imssettings \
     qcrilmsgtunnel \
     QtiTetherService \
     TimeService
