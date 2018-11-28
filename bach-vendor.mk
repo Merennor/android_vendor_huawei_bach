@@ -14,6 +14,7 @@
 
 # APP
 PRODUCT_PACKAGES += \
+    atfwd \
     CNEService \
     colorservice \
     com.qualcomm.location \

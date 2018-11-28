@@ -16,6 +16,19 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter bach,$(TARGET_DEVICE)),)
 
+# ATFWD
+include $(CLEAR_VARS)
+LOCAL_MODULE := atfwd
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := vendor/app/atfwd/atfwd.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
 # Audio
 include $(CLEAR_VARS)
 LOCAL_COPY_HEADERS_TO	:= mm-audio/audio-src
