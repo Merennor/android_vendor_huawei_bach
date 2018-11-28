@@ -39,5 +39,10 @@ PRODUCT_PACKAGES += \
     libsdm-disp-apis \
     libtime_genoff
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    libqmi_oem_main \
+    oeminfo_nvm_server \
+    teecd
 
 $(call inherit-product, vendor/huawei/bach/bach-vendor-blobs.mk)
