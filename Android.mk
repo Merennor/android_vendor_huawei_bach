@@ -135,6 +135,19 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
+# MDTP
+include $(CLEAR_VARS)
+LOCAL_MODULE := MdtpService
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := vendor/app/MdtpService/MdtpService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
 # Network
 include $(CLEAR_VARS)
 LOCAL_MODULE := QtiTetherService

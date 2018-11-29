@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollment \
     ims \
     imssettings \
+    MdtpService \
     qcrilmsgtunnel \
     QtiTetherService \
     TimeService
