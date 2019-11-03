@@ -15,3 +15,7 @@
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/proprietary/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/proprietary/vendor/,vendor/)
+
+# Camera
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/camera/vendor/,vendor/)

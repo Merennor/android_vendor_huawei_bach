@@ -298,4 +298,9 @@ LOCAL_SRC_FILES    := root/sbin/teecd
 LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)/sbin
 include $(BUILD_PREBUILT)
 
+# System Camera
+$(shell mkdir -p $(TARGET_OUT)/etc; \
+    ln -sf /vendor/etc/camera \
+	    $(TARGET_OUT)/etc/camera)
+
 endif
