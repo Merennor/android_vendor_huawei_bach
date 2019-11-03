@@ -46,4 +46,9 @@ PRODUCT_PACKAGES += \
     oeminfo_nvm_server \
     teecd
 
+# Camera
+PRODUCT_PACKAGES += \
+    libts_detected_face_hal \
+    libts_face_beautify_hal
+
 $(call inherit-product, vendor/huawei/bach/bach-vendor-blobs.mk)
