@@ -321,8 +321,4 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
-$(shell mkdir -p $(TARGET_OUT)/etc; \
-    ln -sf /vendor/etc/camera \
-	    $(TARGET_OUT)/etc/camera)
-
 endif
