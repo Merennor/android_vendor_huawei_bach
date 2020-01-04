@@ -32,6 +32,10 @@ PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/media/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/media/vendor/,vendor/)
 
+# Postprocessing
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/postprocessing/vendor/,vendor/)
+
 # Power off alarm
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/alarm/vendor/,vendor/)
