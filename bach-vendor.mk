@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The CyanogenMod Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -45,6 +45,11 @@ PRODUCT_PACKAGES += \
     libqmi_oem_main \
     oeminfo_nvm_server \
     teecd
+
+# WFD
+PRODUCT_PACKAGES += \
+    WfdService \
+    WfdCommon
 
 # Camera
 PRODUCT_PACKAGES += \

@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The CyanogenMod Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/huawei/bach
+
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/proprietary/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/proprietary/vendor/,vendor/)
@@ -19,3 +22,8 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/camera/vendor/,vendor/)
+
+# WFD
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/wfd/system/,system/) \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/wfd/vendor/,vendor/)

@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The CyanogenMod Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -296,6 +296,19 @@ LOCAL_MODULE_TAGS  := optional eng
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := root/sbin/teecd
 LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)/sbin
+include $(BUILD_PREBUILT)
+
+# WFD
+include $(CLEAR_VARS)
+LOCAL_MODULE := WfdService
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := system/priv-app/WfdService/WfdService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 # Camera
