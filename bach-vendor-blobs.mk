@@ -15,9 +15,9 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/huawei/bach
 
+# BT aptX
 PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/proprietary/system/,system/) \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/proprietary/vendor/,vendor/)
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/aptx/system/,system/)
 
 # Camera
 PRODUCT_COPY_FILES += \
