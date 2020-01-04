@@ -23,6 +23,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/camera/vendor/,vendor/)
 
+# Media
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/media/system/,system/) \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/media/vendor/,vendor/)
+
 # Power off alarm
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/alarm/vendor/,vendor/)
