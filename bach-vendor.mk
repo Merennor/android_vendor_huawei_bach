@@ -12,48 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# APP
+# Camera
 PRODUCT_PACKAGES += \
-    atfwd \
-    CNEService \
-    colorservice \
-    com.qualcomm.location \
-    dpmserviceapp \
-    embms \
-    FidoCryptoService \
-    FidoSuiService \
-    HotwordEnrollment \
-    ims \
-    imssettings \
-    MdtpService \
-    qcrilmsgtunnel \
-    QtiTetherService \
-    TimeService
-
-# Framework
-PRODUCT_PACKAGES += \
-    com.qti.location.sdk \
-    qcrilhook
-
-# LIB
-PRODUCT_PACKAGES += \
-    libsdm-disp-apis \
-    libtime_genoff
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    libqmi_oem_main \
-    oeminfo_nvm_server \
-    teecd
+    libts_detected_face_hal \
+    libts_face_beautify_hal
 
 # WFD
 PRODUCT_PACKAGES += \
     WfdService \
     WfdCommon
-
-# Camera
-PRODUCT_PACKAGES += \
-    libts_detected_face_hal \
-    libts_face_beautify_hal
 
 $(call inherit-product, vendor/huawei/bach/bach-vendor-blobs.mk)
