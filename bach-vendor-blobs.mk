@@ -15,7 +15,7 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/huawei/bach
 
-# BT-(aptX)
+# BT - (aptX)
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/aptx/system/,system/)
 
@@ -26,6 +26,10 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/drm/vendor/,vendor/)
+
+# DRM - (Widevine)
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/drmw/vendor/,vendor/)
 
 # Graphics
 PRODUCT_COPY_FILES += \
