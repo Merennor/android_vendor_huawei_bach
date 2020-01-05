@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Alarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm
+
 # Camera
 PRODUCT_PACKAGES += \
     libts_detected_face_hal \
@@ -30,9 +34,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.qualcomm.location
 
-# Power off alarm
+# Radio
 PRODUCT_PACKAGES += \
-    PowerOffAlarm
+    datastatusnotification \
+    QtiTelephonyService \
+    qcrilmsgtunnel
 
 # Time service
 PRODUCT_PACKAGES += \
