@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     qcrilmsgtunnel
 
+# Radio - IMS
+PRODUCT_PACKAGES += \
+    ims
+
 # Time service
 PRODUCT_PACKAGES += \
     TimeService
