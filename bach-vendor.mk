@@ -37,8 +37,7 @@ PRODUCT_PACKAGES += \
 # Radio
 PRODUCT_PACKAGES += \
     datastatusnotification \
-    QtiTelephonyService \
-    qcrilmsgtunnel
+    QtiTelephonyService
 
 # Radio - IMS
 PRODUCT_PACKAGES += \
