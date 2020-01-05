@@ -42,7 +42,9 @@ PRODUCT_PACKAGES += \
 
 # Radio - IMS
 PRODUCT_PACKAGES += \
-    ims
+    ims \
+    imssettings \
+    uceShimService
 
 # Time service
 PRODUCT_PACKAGES += \

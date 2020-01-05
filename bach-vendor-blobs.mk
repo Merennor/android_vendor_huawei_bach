@@ -75,7 +75,8 @@ PRODUCT_COPY_FILES += \
 
 # Radio - IMS
 PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/radio_ims/system/,system/)
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/radio_ims/system/,system/) \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/radio_ims/vendor/,vendor/)
 
 # Time service
 PRODUCT_COPY_FILES += \
