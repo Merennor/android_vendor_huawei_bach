@@ -23,6 +23,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/camera/vendor/,vendor/)
 
+# CNE
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/cne/system/,system/) \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/cne/vendor/,vendor/)
+
+# DPM
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/dpm/system/,system/) \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/dpm/vendor/,vendor/)
+
 # DRM
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/drm/vendor/,vendor/)

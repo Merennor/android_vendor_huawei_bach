@@ -17,6 +17,15 @@ PRODUCT_PACKAGES += \
     libts_detected_face_hal \
     libts_face_beautify_hal
 
+# CNE
+PRODUCT_PACKAGES += \
+    CneApp \
+    IWlanService
+
+# DPM
+PRODUCT_PACKAGES += \
+    dpmserviceapp
+
 # GPS
 PRODUCT_PACKAGES += \
     com.qualcomm.location
