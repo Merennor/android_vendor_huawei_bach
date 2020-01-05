@@ -15,6 +15,10 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/huawei/bach
 
+# Alarm
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/alarm/vendor/,vendor/)
+
 # BT - (aptX)
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/aptx/system/,system/)
@@ -59,9 +63,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/postprocessing/vendor/,vendor/)
 
-# Power off alarm
+# QMI
 PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/alarm/vendor/,vendor/)
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/qmi/system/,system/) \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/qmi/vendor/,vendor/)
 
 # Time service
 PRODUCT_COPY_FILES += \
