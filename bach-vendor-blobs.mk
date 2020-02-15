@@ -15,6 +15,10 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/huawei/bach
 
+# ADSP
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/adsp/vendor/,vendor/)
+
 # Alarm
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/alarm/vendor/,vendor/)
