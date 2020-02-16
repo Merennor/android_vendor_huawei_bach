@@ -67,6 +67,10 @@ PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/media/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/media/vendor/,vendor/)
 
+# Perf
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/perf/vendor/,vendor/)
+
 # Postprocessing
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/postprocessing/vendor/,vendor/)
@@ -85,6 +89,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/radio_ims/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/radio_ims/vendor/,vendor/)
+
+# Thermal
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/thermal/vendor/,vendor/)
 
 # Time service
 PRODUCT_COPY_FILES += \
