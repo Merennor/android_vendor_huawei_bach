@@ -18,6 +18,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    libjpegehw \
+    libmmjpeg \
     libts_detected_face_hal \
     libts_face_beautify_hal
 
