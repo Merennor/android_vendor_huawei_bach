@@ -74,6 +74,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/fps/vendor/,vendor/)
 
+# FPS
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/gatekeeper/vendor/,vendor/)
+
 # GPS
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/gps/system/,system/) \
@@ -82,6 +86,10 @@ PRODUCT_COPY_FILES += \
 # Graphics
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/gpu/vendor/,vendor/)
+
+# Keystore
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/keystore/vendor/,vendor/)
 
 # Media
 PRODUCT_COPY_FILES += \
