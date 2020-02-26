@@ -1,0 +1,8 @@
+#!/system/bin/sh
+#
+
+path=$1
+
+for i in $path/*.so; do
+    /system/bin/dlopen64 $i
+done;
