@@ -35,6 +35,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/audio/vendor/,vendor/)
 
+# Audio Effects
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/audio_effects/vendor/,vendor/)
+
 # Bluetooth
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/bluetooth/vendor/,vendor/)
