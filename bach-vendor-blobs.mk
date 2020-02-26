@@ -94,6 +94,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/keystore/vendor/,vendor/)
 
+# Listen
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/listen/vendor/,vendor/)
+
 # Media
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/media/system/,system/) \
@@ -101,6 +105,7 @@ PRODUCT_COPY_FILES += \
 
 # Perf
 PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/perf/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/perf/vendor/,vendor/)
 
 # QMI
