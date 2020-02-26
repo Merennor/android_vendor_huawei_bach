@@ -108,6 +108,10 @@ PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/perf/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/perf/vendor/,vendor/)
 
+# Peripheral manager
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/peripheral_manager/vendor/,vendor/)
+
 # QMI
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/qmi/system/,system/) \
