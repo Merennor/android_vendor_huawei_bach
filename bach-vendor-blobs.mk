@@ -27,9 +27,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/ant/vendor/,vendor/)
 
-# aptX
+# AptX
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/aptx/system/,system/)
+
+# Audio
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/audio/vendor/,vendor/)
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
