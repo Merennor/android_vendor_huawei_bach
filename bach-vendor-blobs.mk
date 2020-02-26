@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/gpu/vendor/,vendor/)
 
+# Graphics Postprocessing
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/gpu_post/vendor/,vendor/)
+
 # Keystore
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/keystore/vendor/,vendor/)
@@ -98,10 +102,6 @@ PRODUCT_COPY_FILES += \
 # Perf
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/perf/vendor/,vendor/)
-
-# Postprocessing
-PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/postprocessing/vendor/,vendor/)
 
 # QMI
 PRODUCT_COPY_FILES += \
