@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/bluetooth/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/bluetooth/vendor/,vendor/)
 
 # Camera
