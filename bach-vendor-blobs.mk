@@ -127,6 +127,10 @@ PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/radio_ims/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/radio_ims/vendor/,vendor/)
 
+# Sensors
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/sensors/vendor/,vendor/)
+
 # Thermal
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/thermal/vendor/,vendor/)
