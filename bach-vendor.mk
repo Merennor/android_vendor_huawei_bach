@@ -32,10 +32,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     dpmserviceapp
 
-# GPS
-PRODUCT_PACKAGES += \
-    com.qualcomm.location
-
 # Radio
 PRODUCT_PACKAGES += \
     datastatusnotification \

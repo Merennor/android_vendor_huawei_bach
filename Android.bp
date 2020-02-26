@@ -20,17 +20,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "com.qualcomm.location",
-	owner: "huawei",
-	apk: "system/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "QtiTelephonyService",
 	owner: "huawei",
 	apk: "system/app/QtiTelephonyService/QtiTelephonyService.apk",

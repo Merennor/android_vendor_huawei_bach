@@ -80,7 +80,6 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/gps/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/gps/vendor/,vendor/)
 
 # Graphics
