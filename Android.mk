@@ -18,14 +18,24 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter bach,$(TARGET_DEVICE)),)
 
-# Product Audio
+# Symlink Product Audio
 $(shell mkdir -p $(TARGET_OUT)/product/etc; \
     ln -sf /produce/etc/acdbdata \
 	    $(TARGET_OUT)/product/etc/acdbdata)
 
-# Product Camera
+# Symlink Product Camera
 $(shell mkdir -p $(TARGET_OUT)/product/etc; \
     ln -sf /produce/etc/camera \
 	    $(TARGET_OUT)/product/etc/camera)
+
+# Symlink DPM
+$(shell mkdir -p $(TARGET_OUT)/etc; \
+    ln -sf /system/product/etc/dpm \
+	    $(TARGET_OUT)/etc/dpm)
+
+# Symlink Firmware
+$(shell mkdir -p $(TARGET_OUT)/etc; \
+    ln -sf /vendor/firmware \
+	    $(TARGET_OUT)/etc/firmware)
 
 endif
