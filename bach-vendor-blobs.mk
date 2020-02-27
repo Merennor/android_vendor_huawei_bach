@@ -50,7 +50,7 @@ PRODUCT_COPY_FILES += \
 
 # Charger
 PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/chrager/vendor/,vendor/)
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/charger/vendor/,vendor/)
 
 # CNE
 PRODUCT_COPY_FILES += \
