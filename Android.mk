@@ -28,9 +28,4 @@ $(shell mkdir -p $(TARGET_OUT)/product/etc; \
     ln -sf /produce/etc/camera \
 	    $(TARGET_OUT)/product/etc/camera)
 
-# System Camera
-$(shell mkdir -p $(TARGET_OUT)/etc; \
-    ln -sf /vendor/etc/camera \
-	    $(TARGET_OUT)/etc/camera)
-
 endif
