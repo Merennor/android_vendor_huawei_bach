@@ -69,12 +69,16 @@ PRODUCT_COPY_FILES += \
 # DRM - (Widevine)
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/drmw/vendor/,vendor/)
+	
+# Firmware
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/firmware/vendor/,vendor/)
 
-# FPS
+# Fingerprint
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/fps/vendor/,vendor/)
 
-# FPS
+# Gatekeeper
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/gatekeeper/vendor/,vendor/)
 
