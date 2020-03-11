@@ -95,9 +95,8 @@ PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/gpu_post/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/gpu_post/vendor/,vendor/)
 
-# Huawei
+# Huawei - Misc
 PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/huawei/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/huawei/vendor/,vendor/)
 
 # Keystore
