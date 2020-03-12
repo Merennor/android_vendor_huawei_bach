@@ -37,5 +37,10 @@ $(shell mkdir -p $(TARGET_OUT)/etc; \
 $(shell mkdir -p $(TARGET_OUT)/etc; \
     ln -sf /vendor/firmware \
 	    $(TARGET_OUT)/etc/firmware)
+	    
+# Symlink Product Firmware
+$(shell mkdir -p $(TARGET_OUT)/product/etc; \
+    ln -sf /produce/etc/firmware \
+	    $(TARGET_OUT)/product/etc/firmware)
 
 endif
