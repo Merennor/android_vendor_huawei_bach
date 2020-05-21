@@ -84,16 +84,12 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/gps/system/,system/) \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/gps/vendor/,vendor/)
 
 # Graphics
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/gpu/vendor/,vendor/)
-
-# Graphics Postprocessing
-PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/gpu_post/system/,system/) \
-	$(call find-copy-subdir-files,*,vendor/huawei/bach/gpu_post/vendor/,vendor/)
 
 # Huawei - Misc
 PRODUCT_COPY_FILES += \
@@ -120,6 +116,10 @@ PRODUCT_COPY_FILES += \
 # Peripheral manager
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/huawei/bach/peripheral_manager/vendor/,vendor/)
+
+# Postprocessing
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/bach/postprocessing/vendor/,vendor/)
 
 # QMI
 PRODUCT_COPY_FILES += \
